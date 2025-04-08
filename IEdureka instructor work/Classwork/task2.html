@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Project</title>
+    <Script type="text/JavaScript">
+        function light (show) {
+            var pic;
+            if(show == 0) {
+                pic= "./Bulb on image.jpg";
+            }
+            else{
+                pic ="./Bulb off image.jpg";
+            }
+            document.getElementById('bulb').src = pic;
+        }
+
+    </Script>
+</head>
+<body>
+    <hi>BULB On/Off</hi>
+    <p>Here, My JavaScript changes the values of the source attribute of an image.</p>
+    <img id= "bulb" src="./Bulb off image.jpg" width="200px" height="200px">
+    <p>
+        <button type="button" onclick="light(0)">Light ON</button>
+        <button type="button" onclick="light(1)">Light OFF</button>
+    </p>
+    
+</body>
+</html>

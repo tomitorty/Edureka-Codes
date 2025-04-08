@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            firstName: "Tomi",
+            lastName: "Torty",
+            printStudent: function (firstName,lastName) {
+                console.log(this,firstName, this.lastName);
+            },
+        };
+        let student1 = {
+            firstName: "Tomi",
+            lastName: "lastName",
+
+        };
+
+        student.printStudent();
+        student.printStudent.call(student1);
+    </script>
+    
+</body>
+</html>

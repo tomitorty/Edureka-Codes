@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function returnPromise() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log("Promise Executed");
+                    resolve(); // Resolve the promise after execution
+                }, 1000);
+            });
+        }
+
+        async function Data() {
+            var arr = ['Hello', 9, 8, 7, 6]; // Fixed array syntax
+            await returnPromise(); // Correct function call syntax
+            console.log(arr); // Proper placement
+        }
+
+        Data();
+    </script>
+</body>
+</html>
